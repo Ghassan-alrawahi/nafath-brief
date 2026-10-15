@@ -28,5 +28,6 @@ Software Bill Of Materials (SBOM) is an official document for software component
 
 Resource: Minimum Elements For a Software Bill of Materials (SBOM) - https://www.ntia.gov/report/2021/minimum-elements-software-bill-materials-sbom
 ## Misconception in My Track
-
+Another misunderstanding about RPKI is that it will make BGP totally secure through route path validation. Actually, what RPKI does is checking the legitimacy of the origin AS announcing the prefix, but it will not check all networks in the route path. Network administrators should be aware that RPKI can only be seen as one layer of protection against BGP security problems. This is pointed out in RFC 6811 Section 6.
 ## Open Question
+How can enterprises use a single process for checking security throughout the entire technology supply chain by bringing together secure software configuration, trusted AI training datasets, mobile security testing, BGP origin validation, patching vulnerabilities, and SBOMs?
