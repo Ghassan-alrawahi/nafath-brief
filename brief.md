@@ -16,11 +16,17 @@ MASVS stands for the Mobile Application Security Verification Standard which is 
 
 Resource: OWASP Mobile Application Security Verification Standard (MASVS) - https://mas.owasp.org/MASVS/
 ## Networking
+When an AS announces a particular IP prefix in a manner that draws the traffic away from the right path, this results in BGP route hijacking. RPKI can be used in this case to ensure that routers validate if the origin AS announcing that particular prefix is authorized to do so through Route Origin Authorizations. The result of validation can be used in the routing policy decisions made by operators. But RPKI origin validation does not validate each and every AS along the path.
 
+Resource: RFC 6811: BGP Prefix Origin Validation - https://www.rfc-editor.org/rfc/rfc6811.html
 ## Cybersecurity
+Log4Shell (CVE-2021-44228) was a high-severity remote code execution vulnerability in the Apache Log4j logging software. In vulnerable versions of Log4j, it was possible for the attacker to initiate an insecure JNDI lookup, gaining the ability to execute malicious code in vulnerable configurations. Log4Shell affected many programs due to the popularity of Log4j. Companies need to identify their vulnerable systems, apply patches to Log4j and related software, assess potential compromise, and watch for vendor patches.
 
+Resource: Mitigation against Log4Shell and other Log4j Vulnerabilities - https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-356a
 ## Data
+Software Bill Of Materials (SBOM) is an official document for software components and their dependencies. This allows organizations to determine libraries within a product and determine if the existing vulnerabilities exist within the component. The Minimum elements according to NTIA include the supplier name, component name, version of component, other unique identifiers, dependencies, author of SBOM data, and time-stamp. SBOM increases visibility within the supply chain; however, it cannot ensure that all components are secure and without vulnerabilities.
 
+Resource: Minimum Elements For a Software Bill of Materials (SBOM) - https://www.ntia.gov/report/2021/minimum-elements-software-bill-materials-sbom
 ## Misconception in My Track
 
 ## Open Question
